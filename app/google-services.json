@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "272728538978",
+    "firebase_url": "https://zavrsniradfranzamaklar-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "zavrsniradfranzamaklar",
+    "storage_bucket": "zavrsniradfranzamaklar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272728538978:android:045be16fb34ba109abf63b",
+        "android_client_info": {
+          "package_name": "com.example.zavrsniradfranzamaklar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272728538978-j9d23qhvpro0m7n63g7gpkut5cunjdbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5OPLjBrF1hSxAUtonSbCpxxT802blq7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272728538978-j9d23qhvpro0m7n63g7gpkut5cunjdbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

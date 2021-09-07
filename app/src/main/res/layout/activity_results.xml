@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".ResultsActivity"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Povratak"
+        android:fontFamily="@font/roboto"
+        android:layout_below="@+id/barchart"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_marginStart="135dp"
+        android:layout_marginBottom="30dp"
+        />
+
+        <org.eazegraph.lib.charts.BarChart xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/barchart"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:layout_below="@+id/monthSpinner"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            app:egBarWidth="20dp"
+            app:egFixedBarWidth="true"
+            app:egLegendHeight="40dp" />
+
+        <Spinner
+            android:id="@+id/statisticsSpinner"
+            android:layout_width="match_parent"
+            android:prompt="@string/titleSpinner"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycleView"
+            android:layout_marginTop="60sp"
+            android:layout_marginBottom="60dp"
+            android:textAlignment="center"
+            android:spinnerMode="dialog"
+            >
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/monthSpinner"
+            android:layout_width="match_parent"
+            android:prompt="@string/secondTitleSpinner"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statisticsSpinner"
+            android:layout_marginTop="20dp"
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            >
+        </Spinner>
+
+    </RelativeLayout>
+</ScrollView>

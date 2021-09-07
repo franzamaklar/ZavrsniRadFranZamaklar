@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="390dp"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_gravity="center"
+    android:outlineAmbientShadowColor="@color/white"
+    android:background="@drawable/border">
+    
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@color/perfectgray"
+            android:fontFamily="@font/arsenal_bold"
+            android:gravity="center"
+            android:shadowColor="@color/white"
+            android:text="DOBRODOŠLI !"
+            android:textSize="25dp"
+            android:textColor="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:background="@color/perfectgray"
+            android:shadowColor="@color/white"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ubuntu_mono"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Aplikacija za mortalitetnu statistiku"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        >
+
+    <TextView
+        android:id="@+id/tvCredit"
+        android:layout_width="270dp"
+        android:layout_height="30dp"
+        android:background="@color/perfectgray"
+        android:shadowColor="@color/white"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ubuntu_mono"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Izradio : Fran Zamaklar"
+        />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">ZavrsniRadFranZamaklar</string>
+    <string-array name="causemenu_array">
+        <item>Karcinom</item>
+        <item>Oslabljeno srce</item>
+        <item>Moždani udar</item>
+        <item>Samoubojstvo</item>
+    </string-array>
+
+    <string-array name="statistics_array">
+        <item>Specijalna statistika : </item>
+        <item>Statistika po spolu</item>
+        <item>Statistika po uzroku smrti</item>
+    </string-array>
+    <string-array name="month_array">
+        <item>Statistika umrlih po određenom mjesecu : </item>
+        <item>Siječanj</item>
+        <item>Veljača</item>
+        <item>Ožujak</item>
+        <item>Travanj</item>
+        <item>Svibanj</item>
+        <item>Lipanj</item>
+        <item>Srpanj</item>
+        <item>Kolovoz</item>
+        <item>Rujan</item>
+        <item>Listopad</item>
+        <item>Studeni</item>
+        <item>Prosinac</item>
+        <item>Cjelokupni pregled podataka</item>
+    </string-array>
+    <string name="titleSpinner">Opcije po statistici</string>
+    <string name="secondTitleSpinner">Opcije po mjesecu</string>
+    <string name="PersonName">IME</string>
+    <string name="PersonNameET">Upiši ime :</string>
+    <string name="PersonSurname">PREZIME :</string>
+    <string name="PersonSurameET">Upiši prezime : </string>
+    <string name="PersonGender">SPOL :</string>
+    <string name="PersonGenderM">M</string>
+    <string name="PersonGenderF">Ž</string>
+    <string name="PersonBirthDate">DATUM ROĐENJA :</string>
+    <string name="PersonDeathDateTime">DATUM I VRIJEME SMRTI :</string>
+    <string name="PersonDeathPlace">MJESTO SMRTI : </string>
+    <string name="PersonDeathPlaceET">Upiši mjesto smrti : </string>
+    <string name="PersonDeathCause">UZROK SMRTI : </string>
+    <string name="SaveButton">SPREMI</string>
+    <string name="DisplayButton">REZULTATI</string>
+    <string name="MapButton">POGLEDAJ MAPU</string>
+</resources>

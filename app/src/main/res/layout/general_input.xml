@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="300sp"
+        android:layout_height="20dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/perfectgray"
+        android:fontFamily="@font/roboto"
+        android:text="@string/PersonName"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        />
+
+    <TextView
+        android:id="@+id/surname"
+        android:layout_width="300sp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="90dp"
+        android:background="@color/perfectgray"
+        android:fontFamily="@font/roboto"
+        android:text="@string/PersonSurname"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_below="@+id/surname"
+        android:layout_width="300sp"
+        android:layout_height="20dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="90dp"
+        android:background="@color/perfectgray"
+        android:fontFamily="@font/roboto"
+        android:text="@string/PersonGender"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        />
+
+    <TextView
+        android:id="@+id/birthdate"
+        android:layout_below="@+id/gender"
+        android:layout_width="300sp"
+        android:layout_height="20dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="100sp"
+        android:background="@color/perfectgray"
+        android:fontFamily="@font/roboto"
+        android:text="@string/PersonBirthDate"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="300sp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15sp"
+        android:hint="@string/PersonNameET"
+        android:fontFamily="@font/roboto"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textColorHint="@color/perfectgray"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/etnsurame"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surname"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15sp"
+        android:hint="@string/PersonSurameET"
+        android:fontFamily="@font/roboto"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textColorHint="@color/perfectgray"
+        android:textSize="20dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/gender"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="30sp"
+        >
+    <RadioButton
+        android:id="@+id/male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/PersonGenderM"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/textcolor"
+        android:layout_marginStart="85dp"
+        />
+      <RadioButton
+          android:id="@+id/female"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/PersonGenderF"
+          android:fontFamily="@font/roboto"
+          android:textColor="@color/textcolor"
+          android:layout_marginStart="35dp"
+          />
+    </RadioGroup>
+
+    <DatePicker
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_below="@+id/birthdate"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="5sp"
+        />
+
+    <Button
+        android:id="@+id/saveStates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/SaveButton" />
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    >
+
+    <TextView
+        android:id="@+id/deathdate"
+        android:layout_width="300sp"
+        android:layout_height="20dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="50sp"
+        android:background="@color/perfectgray"
+        android:fontFamily="@font/roboto"
+        android:text="@string/PersonDeathDateTime"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        />
+
+    <TextView
+        android:id="@+id/deathplace"
+        android:layout_width="300sp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/dtime"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20sp"
+        android:background="@color/perfectgray"
+        android:fontFamily="@font/roboto"
+        android:text="@string/PersonDeathPlace"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        />
+
+    <TextView
+        android:id="@+id/deathcause"
+        android:layout_below="@+id/etmaps"
+        android:layout_width="300sp"
+        android:layout_height="20dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/perfectgray"
+        android:fontFamily="@font/roboto"
+        android:text="@string/PersonDeathCause"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        />
+
+    <DatePicker
+        android:id="@+id/ddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_below="@+id/deathdate"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="5sp"
+        />
+
+    <TimePicker
+        android:id="@+id/dtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ddate"
+        android:layout_marginStart="70dp"
+        android:timePickerMode="spinner" />
+
+    <Spinner
+        android:id="@+id/causemenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deathcause"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="60dp"
+        >
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/causemenu"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="18dp"
+        android:background="@color/perfectgray"
+        android:fontFamily="@font/roboto"
+        android:text="@string/SaveButton"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/results"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/causemenu"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="18dp"
+        android:layout_toEndOf="@+id/submit"
+        android:background="@color/perfectgray"
+        android:fontFamily="@font/roboto"
+        android:text="@string/DisplayButton"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/viewmap"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/perfectgray"
+        android:layout_below="@id/deathplace"
+        android:text="@string/MapButton"
+        android:fontFamily="@font/roboto"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/etmaps"
+        android:layout_width="300sp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/viewmap"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="35sp"
+        android:hint="@string/PersonDeathPlaceET"
+        android:fontFamily="@font/roboto"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textColorHint="@color/perfectgray"
+        android:textSize="20dp"
+        />
+
+    </RelativeLayout>
+ </ScrollView>
